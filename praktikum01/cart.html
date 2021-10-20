@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+  </head>
+  <body style="margin: 0; height: 100vh; overflow-y: hidden">
+    <nav
+      style="
+        width: 100%;
+        background: salmon;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+      "
+    >
+      <div style="padding: 5px">
+        <h3>&#127829; My Pizza</h3>
+      </div>
+      <div>
+        <ul style="list-style: none; margin-top: 25px">
+          <li style="display: inline; padding: 10px">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: bold"
+              >Category 1</a
+            >
+          </li>
+          |
+          <li style="display: inline; padding: 10px">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: bold"
+              >Category 2</a
+            >
+          </li>
+          |
+          <li style="display: inline; padding: 10px">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: bold"
+              >Category 3</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>&#128722; &#x1F50D; Cart(1)</h3>
+      </div>
+    </nav>
+    <div
+      style="display: grid; grid-template-columns: 70% 30%; margin-top: 60px"
+    >
+      <div style="padding: 10px">
+        <div
+          style="
+            background: rgba(128, 128, 128, 0.171);
+            border-radius: 10px;
+            padding: 10px;
+          "
+        >
+          <h1>Your Chart</h1>
+          <table
+            style="
+              width: 100%;
+              background: #fff;
+              border-radius: 25px;
+              box-shadow: grey 5px 5px 10px;
+            "
+          >
+            <tr>
+              <th style="padding: 15px">Item</th>
+              <th style="padding: 15px">Price</th>
+              <th style="padding: 15px">Quantity</th>
+            </tr>
+            <tr>
+              <td align="center">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/001/609/727/small/cardboard-box-open-delivery-symbol-free-vector.jpg"
+                  style="
+                    width: 120px;
+                    height: 120px;
+                    padding: 10px;
+                    border-radius: 25px;
+                    object-fit: cover;
+                    box-shadow: grey 5px 5px 10px;
+                  "
+                />
+              </td>
+              <td align="center"><h1>$20.000</h1></td>
+              <td align="center">
+                <input
+                  type="number"
+                  style="padding: 8px; text-align: center; border-radius: 10px"
+                  value="1"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th colspan="3" align="right" style="padding: 15px">
+                Subtotal : <b>$200.000</b>
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div style="padding: 10px">
+        <div
+          style="
+            background: rgb(121, 121, 248);
+            padding: 10px;
+            border-radius: 10px;
+          "
+        >
+          <h3>Summary Item (1)</h3>
+          <table style="width: 100%">
+            <tr>
+              <th align="left">Subtotal</th>
+              <th align="right">$200.000</th>
+            </tr>
+            <tr>
+              <th align="left">Shipping</th>
+              <th align="right">-</th>
+            </tr>
+            <tr>
+              <th align="left">Est. Taxes</th>
+              <th align="right">-</th>
+            </tr>
+          </table>
+          <hr />
+          <table style="width: 100%">
+            <tr>
+              <th align="left">Total</th>
+              <th align="right">$200.000</th>
+            </tr>
+          </table>
+          <button
+            style="
+              width: 100%;
+              padding: 10px;
+              background: darkgoldenrod;
+              text-align: center;
+              border-radius: 10px;
+              color: #fff;
+              border: none;
+            "
+          >
+            CHECKOUT
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer
+      style="
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: salmon;
+        display: grid;
+        grid-template-columns: 10% 60% 30%;
+      "
+    >
+      <div style="padding: 5px">
+        <h3>&#127829; My Pizza</h3>
+      </div>
+      <div>
+        <ul style="list-style: none; margin-top: 25px">
+          <li style="display: inline; padding: 10px">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: bold"
+              >Category 1</a
+            >
+          </li>
+          |
+          <li style="display: inline; padding: 10px">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: bold"
+              >Category 2</a
+            >
+          </li>
+          |
+          <li style="display: inline; padding: 10px">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: bold"
+              >Category 3</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>Stay In touch! Our Newsletter</p>
+        <div style="padding-bottom: 10px; margin-top: -10px">
+          <input type="text" style="padding: 5px" placeholder="Email" />
+          <button
+            type="button"
+            style="
+              padding: 5px;
+              background-color: rgb(45, 221, 45);
+              color: white;
+              border-color: rgb(45, 221, 45);
+              margin-left: -10px;
+            "
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
