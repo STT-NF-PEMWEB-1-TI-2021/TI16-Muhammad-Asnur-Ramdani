@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 3.2</title>
+  </head>
+  <body style="margin: 0; height: 100vh; overflow-y: hidden">
+    <nav style="width: 100%; background: salmon; border: 1px salmon solid">
+      <center>
+        <ul>
+          <li style="list-style: none; display: inline-block">
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                padding: 10px;
+                font-size: 18px;
+              "
+              >Home</a
+            >
+          </li>
+          |
+          <li style="list-style: none; display: inline-block">
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                padding: 10px;
+                font-size: 18px;
+              "
+              >Generate Link</a
+            >
+          </li>
+          |
+          <li style="list-style: none; display: inline-block">
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                padding: 10px;
+                font-size: 18px;
+              "
+              >Transaction History</a
+            >
+          </li>
+          |
+          <li style="list-style: none; display: inline-block">
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                padding: 10px;
+                font-size: 18px;
+              "
+              >Policy</a
+            >
+          </li>
+          |
+          <li style="list-style: none; display: inline-block">
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                padding: 10px;
+                font-size: 18px;
+              "
+              >Logout</a
+            >
+          </li>
+        </ul>
+      </center>
+    </nav>
+    <center>
+      <div
+        style="
+          width: 70%;
+          display: grid;
+          grid-template-columns: 40% 60%;
+          margin-top: 50px;
+        "
+      >
+        <div style="text-align: left">
+          <img
+            src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=ejx13G9ZroRrcg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-young-user-icon-2400.png&ehk=NNF6zZUBr0n5i%2fx0Bh3AMRDRDrzslPXB0ANabkkPyv0%3d&risl=&pid=ImgRaw&r=0"
+            style="
+              width: 150px;
+              height: 150px;
+              border: rgba(128, 128, 128, 0.151) 1px solid;
+              box-shadow: grey 5px 5px 5px;
+              border-radius: 10px;
+            "
+          />
+          <br />
+          <br />
+          <div>
+            <b>Upload Image</b><br /><br />
+            <input type="file" placeholder="Upload Image" />
+          </div>
+        </div>
+        <div>
+          <table style="width: 100%">
+            <tr>
+              <td>Title Here</td>
+              <td>:</td>
+              <td><input type="text" style="width: 100%" /></td>
+            </tr>
+            <tr>
+              <td>Description</td>
+              <td>:</td>
+              <td><textarea rows="5" style="width: 100%"></textarea></td>
+            </tr>
+            <tr>
+              <td>Account Number</td>
+              <td>:</td>
+              <td><input type="text" style="width: 100%" /></td>
+            </tr>
+            <tr>
+              <td>Bank</td>
+              <td>:</td>
+              <td>
+                <select style="width: 100%">
+                  <option>BCA</option>
+                  <option>BRI</option>
+                  <option>MANDIRI</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Account Holder</td>
+              <td>:</td>
+              <td><input type="text" style="width: 100%" /></td>
+            </tr>
+            <tr>
+              <td>Transaction</td>
+              <td>:</td>
+              <td><input type="number" min="1" value="1" /><br /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>
+                <p>
+                  * if Transaction is for 3 person, choose 3 from the drop-down
+                  list
+                </p>
+                <input type="checkbox" /> Send to Mobile Phone<br />
+                <input type="checkbox" /> Send Email
+              </td>
+            </tr>
+            <tr>
+              <td>Send To Mobile Phone</td>
+              <td>:</td>
+              <td><input type="text" style="width: 100%" /></td>
+            </tr>
+            <tr>
+              <td>Send To Email</td>
+              <td>:</td>
+              <td><input type="email" style="width: 100%" /></td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  style="
+                    padding: 10px;
+                    color: #fff;
+                    background: lightgreen;
+                    border: none;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                  "
+                >
+                  Generate Nobr Link
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
