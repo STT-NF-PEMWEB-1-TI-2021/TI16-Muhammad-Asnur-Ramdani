@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 4.1 CSS-Internal</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        width: 70%;
+      }
+
+      .img-profile {
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        box-shadow: 15px 15px 15px grey;
+        margin-top: 50px;
+      }
+
+      .bio {
+        text-align: left;
+        padding: 60px;
+      }
+
+      .bio h1 {
+        font-size: 55px;
+      }
+
+      .bio p {
+        font-size: 22px;
+      }
+
+      .other {
+        text-align: left;
+        padding: 80px;
+      }
+
+      .other p {
+        font-size: 22px;
+        text-align: right;
+      }
+
+      .desc {
+        width: 70%;
+      }
+
+      .desc p {
+        font-size: 22px;
+        text-align: left;
+      }
+
+      .footer {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+      }
+
+      .footer div {
+        padding: 10px;
+      }
+
+      .footer div:nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+      }
+
+      .footer div:nth-child(2) div {
+        padding: 10px;
+      }
+
+      .footer div:nth-child(2) div img {
+        height: 110px;
+      }
+
+      .footer div:nth-child(3) {
+        text-align: left;
+      }
+
+      fieldset a {
+        font-size: 22px;
+        text-decoration: none;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <div>
+          <center>
+            <img
+              class="img-profile"
+              src="../praktikum01/assets/img/asnur.jpg"
+            />
+          </center>
+        </div>
+        <div class="bio">
+          <h1>Profile Asnur</h1>
+          <p>
+            Kp. Curug Rt.04/02, Kel. Pakansari, <br />Kec. Cibinong, Kab.
+            Bogor,<br />
+            Jawa Barat
+          </p>
+          <p>Email : <a href="#">asnurramdhani12@gmail.com</a></p>
+          <p>Telephone : 021 9924 0512</p>
+        </div>
+        <div class="other">
+          <h1><u>Categories</u></h1>
+          <p>Lorem ipsum dolor sit amet dolor sit</p>
+        </div>
+      </div>
+
+      <div class="desc">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quam
+          similique deleniti eos nam possimus veritatis cupiditate asperiores
+          esse voluptatem. Officiis nam ad saepe eveniet reiciendis expedita
+          obcaecati, tenetur deleniti.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quam
+          similique deleniti eos nam possimus veritatis cupiditate asperiores
+          esse voluptatem. Officiis nam ad saepe eveniet reiciendis expedita
+          obcaecati, tenetur deleniti.
+        </p>
+      </div>
+
+      <div class="footer">
+        <div>
+          <video width="100%" height="auto" controls>
+            <source
+              src="E-LEC - Google Chrome 2021-10-17 00-04-32.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div>
+          <div>
+            <img src="../praktikum01/assets/img/asnur.jpg" />
+          </div>
+          <div>
+            <img src="../praktikum01/assets/img/asnur.jpg" />
+          </div>
+          <div>
+            <img src="../praktikum01/assets/img/asnur.jpg" />
+          </div>
+          <div>
+            <img src="../praktikum01/assets/img/asnur.jpg" />
+          </div>
+        </div>
+        <div>
+          <fieldset>
+            <legend><h1>Attachment</h1></legend>
+            <a href="../praktikum01/assets/img/asnur.jpg"
+              >&#128444; Foto Profile</a
+            ><br />
+            <a href="../praktikum01/assets/img/asnur.jpg"
+              >&#128444; Foto Profile</a
+            ><br />
+            <a href="../praktikum01/assets/img/asnur.jpg"
+              >&#128444; Foto Profile</a
+            ><br />
+            <a href="../praktikum01/assets/img/asnur.jpg"
+              >&#128444; Foto Profile</a
+            ><br />
+            <a href="../praktikum01/assets/img/asnur.jpg"
+              >&#128444; Foto Profile</a
+            ><br />
+          </fieldset>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
