@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHECKOUT</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow-y: hidden;
+      }
+
+      nav {
+        width: 100%;
+        background: salmon;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+      }
+
+      nav div:first-child {
+        padding: 5px;
+      }
+
+      nav div:nth-child(2) ul {
+        list-style: none;
+        margin-top: 25px;
+      }
+
+      nav div:nth-child(2) ul li {
+        display: inline;
+        padding: 10px;
+      }
+
+      nav div:nth-child(2) ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin-top: 20px;
+      }
+
+      .first {
+        background: rgba(128, 128, 128, 0.171);
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      .two {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        margin-left: 30px;
+      }
+
+      .check {
+        font-size: 40px;
+      }
+
+      .inf {
+        font-size: 18px;
+      }
+
+      .content div {
+        padding: 10px;
+      }
+
+      .cust-info {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+      }
+
+      .chart-info {
+        background: rgb(121, 121, 248);
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .chart-info table {
+        width: 100%;
+      }
+
+      .discount {
+        width: 100%;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: salmon;
+        display: grid;
+        grid-template-columns: 10% 60% 30%;
+      }
+
+      footer div:first-child {
+        padding: 5px;
+      }
+
+      footer div:nth-child(2) ul {
+        list-style: none;
+        margin-top: 25px;
+      }
+
+      footer div:nth-child(2) ul li {
+        display: inline;
+        padding: 10px;
+      }
+
+      footer div:nth-child(2) ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .last {
+        padding-bottom: 10px;
+        margin-top: -10px;
+      }
+
+      .btn-send {
+        padding: 5px;
+        background-color: rgb(45, 221, 45);
+        color: white;
+        border-color: rgb(45, 221, 45);
+        margin-left: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <h3>&#127829; My Pizza</h3>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="#">Category 1</a>
+          </li>
+          |
+          <li>
+            <a href="#">Category 2</a>
+          </li>
+          |
+          <li>
+            <a href="#">Category 3</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>&#128722; &#x1F50D; Cart(1)</h3>
+      </div>
+    </nav>
+    <div class="content">
+      <div>
+        <div class="first">
+          <div class="two">
+            <!-- <div>
+              <h1 class="check">&#x2713;</h1>
+            </div>
+            <div>
+              <p>Order 123123123</p>
+              <h2>Thank You, Asnur</h1>
+            </div> -->
+          </div>
+          <hr />
+          <p class="inf">You Order This Confrimed</p>
+          <p class="inf">
+            We`ve accepted your order and we`re getting it ready
+          </p>
+          <hr />
+          <h1>Customer Information</h1>
+          <div class="cust-info">
+            <div>
+              <b>Shipping Address</b>
+              <p>Asnur Ramdani</p>
+              <a href="#"
+                >Kp. Curug Rt.04/02 Kel. Pakansari, Kec. Cibinong, Kab. Bogor</a
+              ><br />
+            </div>
+            <div>
+              <b>Billing Address</b>
+              <p>Asnur Ramdani</p>
+              <a href="#"
+                >Kp. Curug Rt.04/02 Kel. Pakansari, Kec. Cibinong, Kab. Bogor</a
+              ><br />
+            </div>
+            <div>
+              <br />
+              <b>Shipping Method</b>
+              <p>M-Banking (BCA) - (Estimated ship time of 3-6 days)</p>
+            </div>
+            <div>
+              <br />
+              <b>Payment Method</b>
+              <p>M-Banking (BCA) - 32171 ($200.000)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="chart-info">
+          <h3>Summary Item (1)</h3>
+          <table>
+            <tr>
+              <th align="left">Subtotal</th>
+              <th align="right">$200.000</th>
+            </tr>
+            <tr>
+              <th align="left">Shipping</th>
+              <th align="right">-</th>
+            </tr>
+            <tr>
+              <th align="left">Est. Taxes</th>
+              <th align="right">-</th>
+            </tr>
+          </table>
+          <hr />
+          <p>Gift Card Discount Card</p>
+          <div class="discount">
+            <input type="text" />
+            <button>Apply</button>
+          </div>
+          <hr />
+          <table>
+            <tr>
+              <th align="left">Total</th>
+              <th align="right">$200.000</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <h3>&#127829; My Pizza</h3>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="#">Category 1</a>
+          </li>
+          |
+          <li>
+            <a href="#">Category 2</a>
+          </li>
+          |
+          <li>
+            <a href="#">Category 3</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>Stay In touch! Our Newsletter</p>
+        <div class="last">
+          <input type="text" style="padding: 5px" placeholder="Email" />
+          <button class="btn-send" type="button">Subscribe</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
