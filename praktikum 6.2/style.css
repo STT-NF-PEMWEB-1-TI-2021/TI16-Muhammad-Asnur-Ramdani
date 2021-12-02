@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.header {
+  width: 100%;
+  background: rgb(184, 144, 144);
+  padding: 30px;
+}
+
+.content {
+  display: flex;
+}
+
+.content > div {
+  padding: 100px;
+}
+
+.article {
+  flex-grow: 8;
+  background: rgb(76, 211, 71);
+}
+
+.asside {
+  flex-grow: 1;
+  background: rgb(96, 61, 190);
+}
+
+.nav {
+  flex-grow: 1;
+  background: rgb(82, 83, 15);
+}
+
+.footer {
+  background: rgb(201, 132, 29);
+  padding: 30px;
+}

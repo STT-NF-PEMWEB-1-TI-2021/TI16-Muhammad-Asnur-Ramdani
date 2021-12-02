@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+}
+.flex-container {
+  display: flex;
+}
+
+.flex-container:nth-child(2) {
+  height: 300px;
+}
+
+.item {
+  width: 100%;
+  margin: 5px;
+}
+
+.flex-container .item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
