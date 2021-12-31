@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung luas dan keliling lingkaran</title>
+
+    <script>
+      const keliling_lingkaran = () => {
+        let obj = document.getElementById("hasil");
+
+        let jari_jari = parseFloat(document.getElementById("jari_jari").value);
+
+        if (isNaN(jari_jari)) {
+          alert("Isi terlebih dahulu field jari-jari");
+          obj.innerHTML = "";
+          return;
+        }
+
+        if (jari_jari <= 0) {
+          alert("Jari-jari harus lebih dari 0");
+          obj.innerHTML = "";
+          return;
+        }
+
+        const keliling = 2 * 3.14 * jari_jari;
+
+        obj.innerHTML = `= ${keliling.toFixed(1)}`;
+        return;
+      };
+    </script>
+  </head>
+
+  <body>
+    <input type="number" id="jari_jari" placeholder="Masukan Jari-jari" />
+    <span id="hasil"></span>
+    <br />
+    <br />
+    <button onclick="keliling_lingkaran()">Hitung</button>
+  </body>
+</html>
